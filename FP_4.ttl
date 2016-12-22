@@ -1,0 +1,405 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+@prefix ex: <http://example.com/> 
+@prefix dbr: <http://dbpedia.org/resource/> 
+@prefix owl: <http://www.w3.org/2002/07/owl#> 
+
+
+ex:provinsi a rdfs:class.
+ex:kasuspenyakit a rdfs:class.
+
+
+ex:kasus a rdf:property.
+ex:kasus rdfs:domain ex:provinsi.
+ex:kasus rdfs:range ex:kasuspenyakit.
+
+
+ex:kodeprovinsi a rdf:property.
+ex:kodeprovinsi rdfs:domain ex:provinsi.
+ex:kodeprovinsi rdfs:range xsd:integer.
+
+
+ex:namaprovinsi a rdf:property.
+ex:namaprovinsi rdfs:domain ex:provinsi.
+ex:namaprovinsi rdfs:range xsd:string.
+
+
+ex:diareluarbiasa a rdf:property.
+ex:diareluarbiasa rdfs:domain ex:kasuspenyakit.
+ex:diareluarbiasa rdfs:range xsd:integer.
+
+
+ex:malaria a rdf:property.
+ex:malaria rdfs:domain ex:kasuspenyakit.
+ex:malaria rdfs:range xsd:integer.
+
+
+ex:filariasis a rdf:property.
+ex:filariasis rdfs:domain ex:kasuspenyakit.
+ex:filariasis rdfs:range xsd:integer.
+
+
+
+
+ex:NAD a ex:provinsi.
+ex:NAD owl:sameAs dbr:Aceh.
+ex:NAD2010 a ex:kasuspenyakit.
+ex:NAD ex:kasus ex:NAD2010.
+ex:NAD ex:kodeprovinsi "11"^^xsd:integer.
+ex:NAD ex:namaprovinsi "Prov. Naggroe Aceh Darussalam"^^xsd:string.
+ex:NAD2010 ex:diareluarbiasa "121"^^xsd:integer.
+ex:NAD2010 ex:malaria "540"^^xsd:integer.
+ex:NAD2010 ex:filariasis "2359"^^xsd:integer.
+
+
+ex:Sumut a ex:provinsi.
+ex:Sumut owl:sameAs dbr:North_Sumatra.
+ex:Sumut2010 a ex:kasuspenyakit.
+ex:Sumut ex:kasus ex:Sumut2010.
+ex:Sumut ex:kodeprovinsi "12"^^xsd:integer.
+ex:Sumut ex:namaprovinsi "Prov. Sumatera Utara"^^xsd:string.
+ex:Sumut2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Sumut2010 ex:malaria "610"^^xsd:integer.
+ex:Sumut2010 ex:filariasis "141"^^xsd:integer.
+
+
+ex:Sumbar a ex:provinsi.
+ex:Sumbar owl:sameAs dbr:West_Sumatra.
+ex:Sumbar2010 a ex:kasuspenyakit.
+ex:Sumbar ex:kasus ex:Sumbar2010.
+ex:Sumbar ex:kodeprovinsi "13"^^xsd:integer.
+ex:Sumbar ex:namaprovinsi "Prov. Sumatera Barat"^^xsd:string.
+ex:Sumbar2010 ex:diareluarbiasa "51"^^xsd:integer.
+ex:Sumbar2010 ex:malaria "110"^^xsd:integer.
+ex:Sumbar2010 ex:filariasis "274"^^xsd:integer.
+
+
+ex:Riau a ex:provinsi.
+ex:Riau owl:sameAs dbr:Riau_Islands.
+ex:Riau2010 a ex:kasuspenyakit.
+ex:Riau ex:kasus ex:Riau2010.
+ex:Riau ex:kodeprovinsi "14"^^xsd:integer.
+ex:Riau ex:namaprovinsi "Prov. Riau"^^xsd:string.
+ex:Riau2010 ex:diareluarbiasa "116"^^xsd:integer.
+ex:Riau2010 ex:malaria "240"^^xsd:integer.
+ex:Riau2010 ex:filariasis "532"^^xsd:integer.
+
+
+ex:Jambi a ex:provinsi.
+ex:Jambi owl:sameAs dbr:Jambi.
+ex:Jambi2010 a ex:kasuspenyakit.
+ex:Jambi ex:kasus ex:Jambi2010.
+ex:Jambi ex:kodeprovinsi "15"^^xsd:integer.
+ex:Jambi ex:namaprovinsi "Prov. Jambi"^^xsd:string.
+ex:Jambi2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Jambi2010 ex:malaria "1640"^^xsd:integer.
+ex:Jambi2010 ex:filariasis "221"^^xsd:integer.
+
+
+ex:Sumsel a ex:provinsi.
+ex:Sumsel owl:sameAs dbr:South_Sumatra.
+ex:Sumsel2010 a ex:kasuspenyakit.
+ex:Sumsel ex:kasus ex:Sumsel2010.
+ex:Sumsel ex:kodeprovinsi "16"^^xsd:integer.
+ex:Sumsel ex:namaprovinsi "Prov. Sumatera Selatan"^^xsd:string.
+ex:Sumsel2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Sumsel2010 ex:malaria "450"^^xsd:integer.
+ex:Sumsel2010 ex:filariasis "210"^^xsd:integer.
+
+
+ex:Bengkulu a ex:provinsi.
+ex:Bengkulu owl:sameAs dbr:Bengkulu.
+ex:Bengkulu2010 a ex:kasuspenyakit.
+ex:Bengkulu ex:kasus ex:Bengkulu2010.
+ex:Bengkulu ex:kodeprovinsi "17"^^xsd:integer.
+ex:Bengkulu ex:namaprovinsi "Prov. Bengkulu"^^xsd:string.
+ex:Bengkulu2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Bengkulu2010 ex:malaria "4260"^^xsd:integer.
+ex:Bengkulu2010 ex:filariasis "94"^^xsd:integer.
+
+
+ex:Lampung a ex:provinsi.
+ex:Lampung owl:sameAs dbr:Lampung.
+ex:Lampung2010 a ex:kasuspenyakit.
+ex:Lampung ex:kasus ex:Lampung2010.
+ex:Lampung ex:kodeprovinsi "18"^^xsd:integer.
+ex:Lampung ex:namaprovinsi "Prov. Lampung"^^xsd:string.
+ex:Lampung2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Lampung2010 ex:malaria "320"^^xsd:integer.
+ex:Lampung2010 ex:filariasis "74"^^xsd:integer.
+
+
+ex:Babel a ex:provinsi.
+ex:Babel owl:sameAs dbr:Bangka-Belitung_Islands.
+ex:Babel2010 a ex:kasuspenyakit.
+ex:Babel ex:kasus ex:Babel2010.
+ex:Babel ex:kodeprovinsi "19"^^xsd:integer.
+ex:Babel ex:namaprovinsi "Prov. Kepulauan Bangka Belitung"^^xsd:string.
+ex:Babel2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Babel2010 ex:malaria "5060"^^xsd:integer.
+ex:Babel2010 ex:filariasis "207"^^xsd:integer.
+
+
+ex:Kepri a ex:provinsi.
+ex:Kepri owl:sameAs dbr:Riau_Islands.
+ex:Kepri2010 a ex:kasuspenyakit.
+ex:Kepri ex:kasus ex:Kepri2010.
+ex:Kepri ex:kodeprovinsi "21"^^xsd:integer.
+ex:Kepri ex:namaprovinsi "Prov. Kepulauan Riau"^^xsd:string.
+ex:Kepri2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Kepri2010 ex:malaria "860"^^xsd:integer.
+ex:Kepri2010 ex:filariasis "31"^^xsd:integer.
+
+
+ex:DKI a ex:provinsi.
+ex:DKI owl:sameAs dbr:Jakarta.
+ex:DKI2010 a ex:kasuspenyakit.
+ex:DKI ex:kasus ex:DKI2010.
+ex:DKI ex:kodeprovinsi "31"^^xsd:integer.
+ex:DKI ex:namaprovinsi "Prov. DKI Jakarta"^^xsd:string.
+ex:DKI2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:DKI2010 ex:malaria "0"^^xsd:integer.
+ex:DKI2010 ex:filariasis "53"^^xsd:integer.
+
+
+ex:Jabar a ex:provinsi.
+ex:Jabar owl:sameAs dbr:West_Java.
+ex:Jabar2010 a ex:kasuspenyakit.
+ex:Jabar ex:kasus ex:Jabar2010.
+ex:Jabar ex:kodeprovinsi "32"^^xsd:integer.
+ex:Jabar ex:namaprovinsi "Prov. Jawa Barat"^^xsd:string.
+ex:Jabar2010 ex:diareluarbiasa "1068"^^xsd:integer.
+ex:Jabar2010 ex:malaria "430"^^xsd:integer.
+ex:Jabar2010 ex:filariasis "474"^^xsd:integer.
+
+
+ex:Jateng a ex:provinsi.
+ex:Jateng owl:sameAs dbr:Central_Java.
+ex:Jateng2010 a ex:kasuspenyakit.
+ex:Jateng ex:kasus ex:Jateng2010.
+ex:Jateng ex:kodeprovinsi "33"^^xsd:integer.
+ex:Jateng ex:namaprovinsi "Prov. Jawa Tengah"^^xsd:string.
+ex:Jateng2010 ex:diareluarbiasa "35"^^xsd:integer.
+ex:Jateng2010 ex:malaria "100"^^xsd:integer.
+ex:Jateng2010 ex:filariasis "412"^^xsd:integer.
+
+
+ex:DIY a ex:provinsi.
+ex:DIY owl:sameAs dbr:Special_Region_of_Yogyakarta.
+ex:DIY2010 a ex:kasuspenyakit.
+ex:DIY ex:kasus ex:DIY2010.
+ex:DIY ex:kodeprovinsi "34"^^xsd:integer.
+ex:DIY ex:namaprovinsi "Prov. D.I. Yogyakarta"^^xsd:string.
+ex:DIY2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:DIY2010 ex:malaria "10"^^xsd:integer.
+ex:DIY2010 ex:filariasis "37"^^xsd:integer.
+
+
+ex:Jatim a ex:provinsi.
+ex:Jatim owl:sameAs dbr:East_Java.
+ex:Jatim2010 a ex:kasuspenyakit.
+ex:Jatim ex:kasus ex:Jatim2010.
+ex:Jatim ex:kodeprovinsi "35"^^xsd:integer.
+ex:Jatim ex:namaprovinsi "Prov. Jawa Timur"^^xsd:string.
+ex:Jatim2010 ex:diareluarbiasa "1181"^^xsd:integer.
+ex:Jatim2010 ex:malaria "100"^^xsd:integer.
+ex:Jatim2010 ex:filariasis "219"^^xsd:integer.
+
+
+ex:Banten a ex:provinsi.
+ex:Banten owl:sameAs dbr:Banten.
+ex:Banten2010 a ex:kasuspenyakit.
+ex:Banten ex:kasus ex:Banten2010.
+ex:Banten ex:kodeprovinsi "36"^^xsd:integer.
+ex:Banten ex:namaprovinsi "Prov. Banten"^^xsd:string.
+ex:Banten2010 ex:diareluarbiasa "385"^^xsd:integer.
+ex:Banten2010 ex:malaria "30"^^xsd:integer.
+ex:Banten2010 ex:filariasis "76"^^xsd:integer.
+
+
+ex:Bali a ex:provinsi.
+ex:Bali owl:sameAs dbr:Bali.
+ex:Bali2010 a ex:kasuspenyakit.
+ex:Bali ex:kasus ex:Bali2010.
+ex:Bali ex:kodeprovinsi "51"^^xsd:integer.
+ex:Bali ex:namaprovinsi "Prov. Bali"^^xsd:string.
+ex:Bali2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Bali2010 ex:malaria "30"^^xsd:integer.
+ex:Bali2010 ex:filariasis "18"^^xsd:integer.
+
+
+ex:NTB a ex:provinsi.
+ex:NTB owl:sameAs dbr:West_Nusa_Tenggara.
+ex:NTB2010 a ex:kasuspenyakit.
+ex:NTB ex:kasus ex:NTB2010.
+ex:NTB ex:kodeprovinsi "52"^^xsd:integer.
+ex:NTB ex:namaprovinsi "Prov. Nusa Tenggara Barat"^^xsd:string.
+ex:NTB2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:NTB2010 ex:malaria "1810"^^xsd:integer.
+ex:NTB2010 ex:filariasis "71"^^xsd:integer.
+
+
+ex:NTT a ex:provinsi.
+ex:NTT owl:sameAs dbr:East_Nusa_Tenggara.
+ex:NTT2010 a ex:kasuspenyakit.
+ex:NTT ex:kasus ex:NTT2010.
+ex:NTT ex:kodeprovinsi "53"^^xsd:integer.
+ex:NTT ex:namaprovinsi "Prov. Nusa Tenggara Timur"^^xsd:string.
+ex:NTT2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:NTT2010 ex:malaria "12140"^^xsd:integer.
+ex:NTT2010 ex:filariasis "1730"^^xsd:integer.
+
+
+ex:Kalbar a ex:provinsi.
+ex:Kalbar owl:sameAs dbr:West_Kalimantan.
+ex:Kalbar2010 a ex:kasuspenyakit.
+ex:Kalbar ex:kasus ex:Kalbar2010.
+ex:Kalbar ex:kodeprovinsi "61"^^xsd:integer.
+ex:Kalbar ex:namaprovinsi "Prov. Kalimantan Barat"^^xsd:string.
+ex:Kalbar2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Kalbar2010 ex:malaria "450"^^xsd:integer.
+ex:Kalbar2010 ex:filariasis "253"^^xsd:integer.
+
+
+ex:Kalteng a ex:provinsi.
+ex:Kalteng owl:sameAs dbr:Central_Kalimantan.
+ex:Kalteng2010 a ex:kasuspenyakit.
+ex:Kalteng ex:kasus ex:Kalteng2010.
+ex:Kalteng ex:kodeprovinsi "62"^^xsd:integer.
+ex:Kalteng ex:namaprovinsi "Prov. Kalimantan Tengah"^^xsd:string.
+ex:Kalteng2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Kalteng2010 ex:malaria "3480"^^xsd:integer.
+ex:Kalteng2010 ex:filariasis "225"^^xsd:integer.
+
+
+ex:Kalsel a ex:provinsi.
+ex:Kalsel owl:sameAs dbr:South_Kalimantan.
+ex:Kalsel2010 a ex:kasuspenyakit.
+ex:Kalsel ex:kasus ex:Kalsel2010.
+ex:Kalsel ex:kodeprovinsi "63"^^xsd:integer.
+ex:Kalsel ex:namaprovinsi "Prov. Kalimantan Selatan"^^xsd:string.
+ex:Kalsel2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Kalsel2010 ex:malaria "790"^^xsd:integer.
+ex:Kalsel2010 ex:filariasis "385"^^xsd:integer.
+
+
+ex:Kaltim a ex:provinsi.
+ex:Kaltim owl:sameAs dbr:East_Kalimantan.
+ex:Kaltim2010 a ex:kasuspenyakit.
+ex:Kaltim ex:kasus ex:Kaltim2010.
+ex:Kaltim ex:kodeprovinsi "64"^^xsd:integer.
+ex:Kaltim ex:namaprovinsi "Prov. Kalimantan Timur"^^xsd:string.
+ex:Kaltim2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Kaltim2010 ex:malaria "470"^^xsd:integer.
+ex:Kaltim2010 ex:filariasis "409"^^xsd:integer.
+
+
+ex:Sulut a ex:provinsi.
+ex:Sulut owl:sameAs dbr:North_Sulawesi.
+ex:Sulut2010 a ex:kasuspenyakit.
+ex:Sulut ex:kasus ex:Sulut2010.
+ex:Sulut ex:kodeprovinsi "71"^^xsd:integer.
+ex:Sulut ex:namaprovinsi "Prov. Sulawesi Utara"^^xsd:string.
+ex:Sulut2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Sulut2010 ex:malaria "1630"^^xsd:integer.
+ex:Sulut2010 ex:filariasis "30"^^xsd:integer.
+
+
+ex:Sulteng a ex:provinsi.
+ex:Sulteng owl:sameAs dbr:Central_Sulawesi.
+ex:Sulteng2010 a ex:kasuspenyakit.
+ex:Sulteng ex:kasus ex:Sulteng2010.
+ex:Sulteng ex:kodeprovinsi "72"^^xsd:integer.
+ex:Sulteng ex:namaprovinsi "Prov. Sulawesi Tengah"^^xsd:string.
+ex:Sulteng2010 ex:diareluarbiasa "817"^^xsd:integer.
+ex:Sulteng2010 ex:malaria "2080"^^xsd:integer.
+ex:Sulteng2010 ex:filariasis "451"^^xsd:integer.
+
+
+ex:Sulsel a ex:provinsi.
+ex:Sulsel owl:sameAs dbr:South_Sulawesi.
+ex:Sulsel2010 a ex:kasuspenyakit.
+ex:Sulsel ex:kasus ex:Sulsel2010.
+ex:Sulsel ex:kodeprovinsi "73"^^xsd:integer.
+ex:Sulsel ex:namaprovinsi "Prov. Sulawesi Selatan"^^xsd:string.
+ex:Sulsel2010 ex:diareluarbiasa "169"^^xsd:integer.
+ex:Sulsel2010 ex:malaria "350"^^xsd:integer.
+ex:Sulsel2010 ex:filariasis "128"^^xsd:integer.
+
+
+ex:Sultra a ex:provinsi.
+ex:Sultra owl:sameAs dbr:Southeast_Sulawesi.
+ex:Sultra2010 a ex:kasuspenyakit.
+ex:Sultra ex:kasus ex:Sultra2010.
+ex:Sultra ex:kodeprovinsi "74"^^xsd:integer.
+ex:Sultra ex:namaprovinsi "Prov. Sulawesi Tenggara"^^xsd:string.
+ex:Sultra2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Sultra2010 ex:malaria "460"^^xsd:integer.
+ex:Sultra2010 ex:filariasis "107"^^xsd:integer.
+
+
+ex:Gorontalo a ex:provinsi.
+ex:Gorontalo owl:sameAs dbr:Gorontalo.
+ex:Gorontalo2010 a ex:kasuspenyakit.
+ex:Gorontalo ex:kasus ex:Gorontalo2010.
+ex:Gorontalo ex:kodeprovinsi "75"^^xsd:integer.
+ex:Gorontalo ex:namaprovinsi "Prov. Gorontalo"^^xsd:string.
+ex:Gorontalo2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Gorontalo2010 ex:malaria "1710"^^xsd:integer.
+ex:Gorontalo2010 ex:filariasis "224"^^xsd:integer.
+
+
+ex:Sulbar a ex:provinsi.
+ex:Sulbar owl:sameAs dbr:West_Sulawesi.
+ex:Sulbar2010 a ex:kasuspenyakit.
+ex:Sulbar ex:kasus ex:Sulbar2010.
+ex:Sulbar ex:kodeprovinsi "76"^^xsd:integer.
+ex:Sulbar ex:namaprovinsi "Prov. Sulawesi Barat"^^xsd:string.
+ex:Sulbar2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Sulbar2010 ex:malaria "550"^^xsd:integer.
+ex:Sulbar2010 ex:filariasis "96"^^xsd:integer.
+
+
+ex:Maluku a ex:provinsi.
+ex:Maluku owl:sameAs <http://dbpedia.org/resource/Maluku_(province)>.
+ex:Maluku2010 a ex:kasuspenyakit.
+ex:Maluku ex:kasus ex:Maluku2010.
+ex:Maluku ex:kodeprovinsi "81"^^xsd:integer.
+ex:Maluku ex:namaprovinsi "Prov. Maluku"^^xsd:string.
+ex:Maluku2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Maluku2010 ex:malaria "5430"^^xsd:integer.
+ex:Maluku2010 ex:filariasis "70"^^xsd:integer.
+
+
+ex:Malut a ex:provinsi.
+ex:Malut owl:sameAs dbr:North_Maluku.
+ex:Malut2010 a ex:kasuspenyakit.
+ex:Malut ex:kasus ex:Malut2010.
+ex:Malut ex:kodeprovinsi "82"^^xsd:integer.
+ex:Malut ex:namaprovinsi "Prov. Maluku Utara"^^xsd:string.
+ex:Malut2010 ex:diareluarbiasa "0"^^xsd:integer.
+ex:Malut2010 ex:malaria "6450"^^xsd:integer.
+ex:Malut2010 ex:filariasis "27"^^xsd:integer.
+
+
+ex:Papuabarat a ex:provinsi.
+ex:Papuabarat owl:sameAs <http://dbpedia.org/resource/West_Papua_(province)>.
+ex:Papuabarat2010 a ex:kasuspenyakit.
+ex:Papuabarat ex:kasus ex:Papuabarat2010.
+ex:Papuabarat ex:kodeprovinsi "91"^^xsd:integer.
+ex:Papuabarat ex:namaprovinsi "Prov. Papua Barat"^^xsd:string.
+ex:Papuabarat2010 ex:diareluarbiasa "37"^^xsd:integer.
+ex:Papuabarat2010 ex:malaria "17860"^^xsd:integer.
+ex:Papuabarat2010 ex:filariasis "988"^^xsd:integer.
+
+
+ex:Papua a ex:provinsi.
+ex:Papua owl:sameAs <http://dbpedia.org/resource/Papua_(province)>.
+ex:Papua2010 a ex:kasuspenyakit.
+ex:Papua ex:kasus ex:Papua2010.
+ex:Papua ex:kodeprovinsi "92"^^xsd:integer.
+ex:Papua ex:namaprovinsi "Prov. Papua"^^xsd:string.
+ex:Papua2010 ex:diareluarbiasa "224"^^xsd:integer.
+ex:Papua2010 ex:malaria "18030"^^xsd:integer.
+ex:Papua2010 ex:filariasis "1343"^^xsd:integer.
